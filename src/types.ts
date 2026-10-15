@@ -1,0 +1,10 @@
+export type Status = 'Paid' | 'Pending' | 'Overdue';
+export type Category = 'Maintenance' | 'Parking' | 'Event' | 'Other';
+export type FundName = 'Maintenance Fund' | 'Other Collection';
+export type ComplaintStatus = 'Open' | 'In Progress' | 'Resolved';
+export type Member = { id: string; name: string; flat: string; type: 'Owner' | 'Tenant'; phone?: string; email?: string; status: 'Active' | 'Pending' };
+export type Collection = { id: string; flat: string; category: Category; amount: number; status: Status; date: string; month: string; remarks?: string };
+export type Expense = { id: string; description: string; fund: FundName; category: string; amount: number; date: string };
+export type Notice = { id: string; title: string; body: string; created_at: string };
+export type Complaint = { id: string; flat: string; title: string; details: string; status: ComplaintStatus; created_at: string };
+export type Db = { society: string; members: Member[]; collections: Collection[]; expenses: Expense[]; notices: Notice[]; complaints: Complaint[] };

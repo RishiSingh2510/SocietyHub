@@ -151,4 +151,8 @@ Improved payment reconciliation
 
 No license has been specified yet. Add a license before distributing or allowing others to reuse the project.
 
+## Prototype 
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/8181906e-f759-4a1b-90e0-81202f2ecfdf" />
+
+
 **SocietyHub — Making society management simpler.**
